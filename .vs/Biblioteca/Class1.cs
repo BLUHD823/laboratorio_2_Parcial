@@ -33,7 +33,7 @@ namespace Biblioteca
         {
             get
             {
-                return $"{apellido},{nombre}.";
+                return $"{apellido}, {nombre}.";
             }
         }
 

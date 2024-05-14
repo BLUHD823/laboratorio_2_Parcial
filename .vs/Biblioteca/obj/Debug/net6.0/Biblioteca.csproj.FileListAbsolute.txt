@@ -1,0 +1,11 @@
+C:\Users\Alejo\Desktop\laboratorio_2_Parcial\.vs\Biblioteca\bin\Debug\net6.0\Biblioteca.deps.json
+C:\Users\Alejo\Desktop\laboratorio_2_Parcial\.vs\Biblioteca\bin\Debug\net6.0\Biblioteca.dll
+C:\Users\Alejo\Desktop\laboratorio_2_Parcial\.vs\Biblioteca\bin\Debug\net6.0\Biblioteca.pdb
+C:\Users\Alejo\Desktop\laboratorio_2_Parcial\.vs\Biblioteca\obj\Debug\net6.0\Biblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alejo\Desktop\laboratorio_2_Parcial\.vs\Biblioteca\obj\Debug\net6.0\Biblioteca.AssemblyInfoInputs.cache
+C:\Users\Alejo\Desktop\laboratorio_2_Parcial\.vs\Biblioteca\obj\Debug\net6.0\Biblioteca.AssemblyInfo.cs
+C:\Users\Alejo\Desktop\laboratorio_2_Parcial\.vs\Biblioteca\obj\Debug\net6.0\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Alejo\Desktop\laboratorio_2_Parcial\.vs\Biblioteca\obj\Debug\net6.0\Biblioteca.dll
+C:\Users\Alejo\Desktop\laboratorio_2_Parcial\.vs\Biblioteca\obj\Debug\net6.0\refint\Biblioteca.dll
+C:\Users\Alejo\Desktop\laboratorio_2_Parcial\.vs\Biblioteca\obj\Debug\net6.0\Biblioteca.pdb
+C:\Users\Alejo\Desktop\laboratorio_2_Parcial\.vs\Biblioteca\obj\Debug\net6.0\ref\Biblioteca.dll

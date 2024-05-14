@@ -28,102 +28,106 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            listBox1 = new ListBox();
-            listBox2 = new ListBox();
-            label2 = new Label();
-            textBox1 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
+            lblMedicos = new Label();
+            lstMedicos = new ListBox();
+            lstPacientes = new ListBox();
+            lblPacientes = new Label();
+            btnAtender = new Button();
+            btnSalir = new Button();
+            rtbInfoMedico = new RichTextBox();
             SuspendLayout();
             // 
-            // label1
+            // lblMedicos
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(12, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(92, 15);
-            label1.TabIndex = 0;
-            label1.Text = "PersonalMedico";
+            lblMedicos.AutoSize = true;
+            lblMedicos.Location = new Point(12, 9);
+            lblMedicos.Name = "lblMedicos";
+            lblMedicos.Size = new Size(92, 15);
+            lblMedicos.TabIndex = 0;
+            lblMedicos.Text = "PersonalMedico";
             // 
-            // listBox1
+            // lstMedicos
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(12, 27);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(170, 124);
-            listBox1.TabIndex = 1;
+            lstMedicos.FormattingEnabled = true;
+            lstMedicos.ItemHeight = 15;
+            lstMedicos.Location = new Point(12, 27);
+            lstMedicos.Name = "lstMedicos";
+            lstMedicos.Size = new Size(170, 124);
+            lstMedicos.TabIndex = 1;
             // 
-            // listBox2
+            // lstPacientes
             // 
-            listBox2.FormattingEnabled = true;
-            listBox2.ItemHeight = 15;
-            listBox2.Location = new Point(214, 27);
-            listBox2.Name = "listBox2";
-            listBox2.Size = new Size(170, 124);
-            listBox2.TabIndex = 3;
+            lstPacientes.FormattingEnabled = true;
+            lstPacientes.ItemHeight = 15;
+            lstPacientes.Location = new Point(214, 27);
+            lstPacientes.Name = "lstPacientes";
+            lstPacientes.Size = new Size(170, 124);
+            lstPacientes.TabIndex = 3;
             // 
-            // label2
+            // lblPacientes
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(214, 9);
-            label2.Name = "label2";
-            label2.Size = new Size(57, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Pacientes";
+            lblPacientes.AutoSize = true;
+            lblPacientes.Location = new Point(214, 9);
+            lblPacientes.Name = "lblPacientes";
+            lblPacientes.Size = new Size(57, 15);
+            lblPacientes.TabIndex = 2;
+            lblPacientes.Text = "Pacientes";
             // 
-            // textBox1
+            // btnAtender
             // 
-            textBox1.Location = new Point(12, 157);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(372, 23);
-            textBox1.TabIndex = 4;
+            btnAtender.Location = new Point(399, 27);
+            btnAtender.Name = "btnAtender";
+            btnAtender.Size = new Size(120, 23);
+            btnAtender.TabIndex = 5;
+            btnAtender.Text = "Atender";
+            btnAtender.UseVisualStyleBackColor = true;
+            btnAtender.Click += btnAtender_Click;
             // 
-            // button1
+            // btnSalir
             // 
-            button1.Location = new Point(399, 27);
-            button1.Name = "button1";
-            button1.Size = new Size(120, 23);
-            button1.TabIndex = 5;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnSalir.Location = new Point(399, 157);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(120, 23);
+            btnSalir.TabIndex = 6;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // rtbInfoMedico
             // 
-            button2.Location = new Point(399, 157);
-            button2.Name = "button2";
-            button2.Size = new Size(120, 23);
-            button2.TabIndex = 6;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            rtbInfoMedico.Location = new Point(12, 158);
+            rtbInfoMedico.Name = "rtbInfoMedico";
+            rtbInfoMedico.Size = new Size(372, 96);
+            rtbInfoMedico.TabIndex = 7;
+            rtbInfoMedico.Text = "";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
-            Controls.Add(listBox2);
-            Controls.Add(label2);
-            Controls.Add(listBox1);
-            Controls.Add(label1);
+            ClientSize = new Size(532, 300);
+            Controls.Add(rtbInfoMedico);
+            Controls.Add(btnSalir);
+            Controls.Add(btnAtender);
+            Controls.Add(lstPacientes);
+            Controls.Add(lblPacientes);
+            Controls.Add(lstMedicos);
+            Controls.Add(lblMedicos);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private ListBox listBox1;
-        private ListBox listBox2;
-        private Label label2;
-        private TextBox textBox1;
-        private Button button1;
-        private Button button2;
+        private Label lblMedicos;
+        private ListBox lstMedicos;
+        private ListBox lstPacientes;
+        private Label lblPacientes;
+        private Button btnAtender;
+        private Button btnSalir;
+        private RichTextBox rtbInfoMedico;
     }
 }

@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    public class Personal_Medico:Persona
+    public class PersonalMedico:Persona
     {
         private List<Consulta> consultas;
         private bool esResidente;
 
-        public Personal_Medico(string nombre, string apellido, DateTime nacimiento, bool esRecidente):base(nombre,nacimiento,apellido)
+        public PersonalMedico(string nombre, string apellido, DateTime nacimiento, bool esRecidente):base(nombre,nacimiento,apellido)
         {
             this.consultas = new List<Consulta>();
             this.esResidente = esRecidente;
@@ -32,7 +32,7 @@ namespace Biblioteca
             return sb.ToString();
         }
 
-        public static Consulta operator +(Personal_Medico doctor, Paciente paciente)
+        public static Consulta operator +(PersonalMedico doctor, Paciente paciente)
         {
             Consulta cons1 = new(DateTime.Now, paciente);
             foreach (Consulta item in doctor.consultas)
@@ -43,7 +43,7 @@ namespace Biblioteca
                     return cons1;
                 }
             }
-            return cons1;   
+            return null;   
         }
 
     }
