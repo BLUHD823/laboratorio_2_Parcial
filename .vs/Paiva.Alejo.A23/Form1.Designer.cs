@@ -54,6 +54,7 @@
             lstMedicos.Name = "lstMedicos";
             lstMedicos.Size = new Size(170, 124);
             lstMedicos.TabIndex = 1;
+            lstMedicos.SelectedIndexChanged += lstMedicos_SelectedIndexChanged;
             // 
             // lstPacientes
             // 
@@ -91,6 +92,7 @@
             btnSalir.TabIndex = 6;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // rtbInfoMedico
             // 

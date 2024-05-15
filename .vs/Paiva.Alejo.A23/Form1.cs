@@ -21,10 +21,30 @@ namespace Paiva.Alejo.A23
 
         private void btnAtender_Click(object sender, EventArgs e)
         {
-            if (lstMedicos.SelectedIndex == -1)
+            if (lstMedicos.SelectedIndex != -1 && lstPacientes.SelectedIndex != -1)
             {
-                MessageBox.Show("Debe seleccionar un Medico y un Paciente para poder continuar.","Error en los datos",MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                Paciente pacienteSeleccionado = (Paciente)lstPacientes.SelectedItem;
+                pacienteSeleccionado.Diagnostico = "Paciente curado";
+                lstMedicos.SelectedIndices.Clear();
+                lstPacientes.SelectedIndices.Clear();
+
+                MessageBox.Show($"{pacienteSeleccionado.Diagnostico}", "Atención finalizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un Medico y un Paciente para poder continuar.", "Error en los datos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void lstMedicos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            PersonalMedico medicoSeleccionado = (PersonalMedico)lstMedicos.SelectedItem;
+            rtbInfoMedico.Text = Persona.FichaPersonal(medicoSeleccionado);
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            DialogResult result= MessageBox.Show("¿Seguro desea salir.?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
         }
     }
 }

@@ -43,7 +43,7 @@ namespace Biblioteca
                     return cons1;
                 }
             }
-            return null;   
+            return cons1;   
         }
 
     }
