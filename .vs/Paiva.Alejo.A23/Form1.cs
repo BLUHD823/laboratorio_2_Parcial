@@ -45,6 +45,11 @@ namespace Paiva.Alejo.A23
         private void btnSalir_Click(object sender, EventArgs e)
         {
             DialogResult result= MessageBox.Show("¿Seguro desea salir.?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            
         }
     }
 }
