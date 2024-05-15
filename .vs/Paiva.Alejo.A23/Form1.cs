@@ -1,4 +1,6 @@
 using Biblioteca;
+using System.Text;
+
 namespace Paiva.Alejo.A23
 {
     public partial class Form1 : Form
@@ -39,7 +41,9 @@ namespace Paiva.Alejo.A23
         private void lstMedicos_SelectedIndexChanged(object sender, EventArgs e)
         {
             PersonalMedico medicoSeleccionado = (PersonalMedico)lstMedicos.SelectedItem;
-            rtbInfoMedico.Text = Persona.FichaPersonal(medicoSeleccionado);
+            StringBuilder sb = new();
+            sb.AppendLine($"{Persona.FichaPersonal(medicoSeleccionado)}");
+            rtbInfoMedico.Text = sb.ToString();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
